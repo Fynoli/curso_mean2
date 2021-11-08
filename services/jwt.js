@@ -16,5 +16,5 @@ exports.createToken = function(user){
         exp: moment().add(30,'days').unix
     };
 
-    return jwt.encode(payload,secret);
+    return jwt.encode(payload,secret);//El token vive en memoria
 };
